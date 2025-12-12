@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+/* Hero Styles */
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* Features Styles */
+.features {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    gap: 2rem;
+}
+
+.feature-card {
+    width: 200px;
+    height: 250px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Swiper / Pagination Styles */
+.swiper {
+    width: 80%;
+    height: 400px;
+}
+
+.swiper-slide {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: white; /* Customize dots */
+}
