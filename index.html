@@ -3,49 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Coworking Space</title>
+    <title>OryCo | Premium Coworking</title>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="logo">OryCo</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#amenities">Services</a>
+            <a href="#spaces">Spaces</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#reservation" class="btn-nav">Book Now</a>
+        </div>
+
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Switch Theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#amenities">Services</a>
+        <a href="#spaces">Spaces</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reservation">Book Now</a>
+    </div>
+
     <main>
-        <section class="hero">
-            <h1 class="anim-text">Work Differently.</h1>
-            <p class="anim-text">Premium spaces for modern creators.</p>
-        </section>
-
-        <section class="features">
-            <div class="feature-card">High Speed Wifi</div>
-            <div class="feature-card">Free Coffee</div>
-            <div class="feature-card">Meeting Rooms</div>
-        </section>
-
-        <section class="gallery">
-            <h2>Our Spaces</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Open Space</div>
-                    <div class="swiper-slide">Private Office</div>
-                    <div class="swiper-slide">Chill Zone</div>
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="assets/images/image1.jpg"  alt="Coworking Space">
+            </div>
+            
+            <div class="hero-content">
+                <div class="overflow-hide">
+                    <h1 class="hero-title">Redefine</h1>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="overflow-hide">
+                    <h1 class="hero-title outline">Workspace.</h1>
+                </div>
+                <p class="hero-subtitle">Premium offices for the modern creator.</p>
+                <div class="hero-cta">
+                    <a href="#reservation" class="btn-primary">Reserve Your Spot</a>
+                </div>
             </div>
         </section>
 
-        <section class="footer">
-            <h2>Join us today</h2>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal-image">
+                        <img src="assets/images/image2.jpg" alt="About Us">
+                    </div>
+                    <div class="about-text">
+                        <span class="tag">The Vision</span>
+                        <h2 class="section-heading">More than just <br>a desk.</h2>
+                        <p>We believe that environment dictates performance. At OryCo, we have curated an ecosystem designed to eliminate friction and amplify focus.</p>
+                        <p>From acoustic engineering to circadian lighting, every detail is intentional. Join a community of forward-thinkers in a space built for success.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="horizontal-scroll" id="amenities">
+            <div class="pin-wrap">
+                <div class="h-title">
+                    <h2>Our <span style="color: var(--accent-color);">Premium</span><br>Services</h2>
+                </div>
+                
+                <div class="animation-wrap">
+                    <div class="item">
+                        <div class="item-number">01</div>
+                        <h3>Hyper-Fast Internet</h3>
+                        <p>10Gbps dedicated fiber lines with redundancy systems.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-number">02</div>
+                        <h3>24/7 Access</h3>
+                        <p>Work on your schedule. Biometric security entry anytime.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-number">03</div>
+                        <h3>Private Studios</h3>
+                        <p>Soundproof glass pods for focus and confidential calls.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-number">04</div>
+                        <h3>Wellness Room</h3>
+                        <p>Nap pods, meditation zones, and free organic espresso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="spaces">
+            <div class="gallery-text">
+                <div class="text-block" data-index="0">
+                    <span class="tag">01 / The Focus</span>
+                    <h2>Private<br>Offices.</h2>
+                    <p>Soundproof glass enclosures designed for deep work. Equipped with Herman Miller chairs and smart lighting systems.</p>
+                    <a href="#reservation" class="btn-text">Check Availability -></a>
+                </div>
+
+                <div class="text-block" data-index="1">
+                    <span class="tag">02 / The Community</span>
+                    <h2>Open<br>Space.</h2>
+                    <p>Vibrant shared zones where ideas collide. Includes access to phone booths and floating desks.</p>
+                    <a href="#reservation" class="btn-text">Join the Hub -></a>
+                </div>
+
+                <div class="text-block" data-index="2">
+                    <span class="tag">03 / The Recharge</span>
+                    <h2>Lounge &<br>Cafe.</h2>
+                    <p>Barista-made coffee, organic snacks, and plush sofas. The perfect place to take a break.</p>
+                    <a href="#amenities" class="btn-text">View Menu -></a>
+                </div>
+            </div>
+
+            <div class="gallery-photos">
+                <div class="photo active">
+                    <img src="assets/images/image2.jpg"  alt="Private Office">
+                </div>
+                <div class="photo">
+                    <img src="assets/images/image3.jpg"  alt="Open Space">
+                </div>
+                <div class="photo">
+                    <img src="assets/images/image4.jpg"  alt="Lounge">
+                </div>
+            </div>
+        </section>
+
+        <section class="marquee-section">
+            <div class="marquee-content">
+                <span>JOIN THE REVOLUTION &nbsp; • &nbsp; BOOK YOUR TOUR &nbsp; • &nbsp; WORK DIFFERENTLY &nbsp; • &nbsp; </span>
+                <span>JOIN THE REVOLUTION &nbsp; • &nbsp; BOOK YOUR TOUR &nbsp; • &nbsp; WORK DIFFERENTLY &nbsp; • &nbsp; </span>
+            </div>
+        </section>
+
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="tag">Memberships</span>
+                    <h2 class="section-heading">Choose Your Space</h2>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Day Pass</h3>
+                        <div class="price">35 Dhs<span>/day</span></div>
+                        <p>Perfect for travelers and occasional access.</p>
+                        <ul class="features">
+                            <li>✓ 9:00 - 18:00 Access</li>
+                            <li>✓ High-speed WiFi</li>
+                            <li>✓ Free Coffee</li>
+                            <li>✓ Common Areas</li>
+                        </ul>
+                        <a href="#reservation" class="btn-outline">Book Now</a>
+                    </div>
+
+                    <div class="price-card highlight">
+                        <div class="popular-tag">Most Popular</div>
+                        <h3>Dedicated Desk</h3>
+                        <div class="price">350 Dhs<span>/mo</span></div>
+                        <p>Your own personal desk in a shared premium space.</p>
+                        <ul class="features">
+                            <li>✓ 24/7 Biometric Access</li>
+                            <li>✓ Lockable Cabinet</li>
+                            <li>✓ 5h Meeting Room/mo</li>
+                            <li>✓ Mail Handling</li>
+                        </ul>
+                        <a href="#reservation" class="btn-primary">Get Started</a>
+                    </div>
+
+                    <div class="price-card">
+                        <h3>Private Office</h3>
+                        <div class="price">800 Dhs<span>/mo</span></div>
+                        <p>Fully enclosed office for teams of 2-10 people.</p>
+                        <ul class="features">
+                            <li>✓ 24/7 Biometric Access</li>
+                            <li>✓ Custom Branding</li>
+                            <li>✓ Unlimited Meeting Room</li>
+                            <li>✓ Priority Support</li>
+                        </ul>
+                        <a href="#reservation" class="btn-outline">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-section" id="reservation">
+            <div class="container reservation-container">
+                <div class="form-text">
+                    <span class="tag">Book a Tour</span>
+                    <h2 class="section-heading">Come see it <br>for yourself.</h2>
+                    <p>Fill out the form to schedule a tour or reserve a desk. Our community manager will contact you within 2 hours.</p>
+                    
+                    <div class="contact-info">
+                        <div class="c-item">
+                            <h4>Email</h4>
+                            <p>oryco@contact.com</p>
+                        </div>
+                        <div class="c-item">
+                            <h4>Phone</h4>
+                            <p>+212 623 29 05 30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="booking-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Full Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="type" required>
+                            <option value="" disabled selected>Interested in...</option>
+                            <option value="tour">Book a Tour</option>
+                            <option value="daypass">Day Pass</option>
+                            <option value="dedicated">Dedicated Desk</option>
+                            <option value="office">Private Office</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" onfocus="(this.type='date')" id="date" placeholder="Preferred Date">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Request</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">OryCo</h2>
+                    <p>Redefining how the world works, one desk at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sitemap</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#spaces">Spaces</a></li>
+                        <li><a href="#reservation">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 OryCo Inc. Oujda, Morocco.</p>
+            </div>
+        </footer>
+
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="js/script.js"></script>
 </body>
 </html>
